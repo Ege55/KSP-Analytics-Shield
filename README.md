@@ -13,7 +13,7 @@ A small KSP plugin that pauses Unity's legacy Analytics initialization and repea
 - Reapplies all three settings when the game regains focus and every two seconds.
 - Writes one status line to `KSP.log`; if KSP or another plugin re-enables a setting, the mod reapplies the disabled state and logs the change.
 
-The 0.1.0 build loaded in KSP 1.12.5.03190, logged both Analytics collection flags as `False`, and KSP's startup events returned `AnalyticsDisabled`. The 0.2.0 build adds the initialization pause; verify its new log line and network behavior on first launch.
+The 0.2.0 build was verified in KSP 1.12.5.03190: the log showed `initializeOnStartup=False`, `enabled=False`, and `deviceStatsEnabled=False`, and KSP's startup events returned `AnalyticsDisabled`. This confirms the Analytics API state in the running game; it does not prove that no Unity or KSP network requests occurred.
 
 ## Limits
 
@@ -41,7 +41,7 @@ The script compiles against the assemblies in that KSP installation and writes t
 
 ## CKAN
 
-`NetKAN/KSPAnalyticsShield.netkan.template` is a draft configured for this GitHub repository. The `v0.2.0` GitHub release is marked as an experimental pre-release. Before submitting to CKAN, verify the mod in KSP, then finalize and submit the metadata to the NetKAN repository. This template cannot be indexed as-is.
+`NetKAN/KSPAnalyticsShield.netkan.template` mirrors the metadata submitted to the NetKAN repository. The `v0.2.0` GitHub release is marked as an experimental pre-release, and the entry requests staging for manual review. [NetKAN PR #11613](https://github.com/KSP-CKAN/NetKAN/pull/11613) is open and awaiting maintainer review; the mod will not appear in CKAN until the PR is accepted and indexed. This template cannot be indexed as-is.
 
 ## License
 
