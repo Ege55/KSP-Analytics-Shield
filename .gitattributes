@@ -1,0 +1,9 @@
+/.editorconfig text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/VERSION text eol=lf
+*.cs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.template text eol=lf
+*.bat text eol=crlf

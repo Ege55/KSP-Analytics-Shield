@@ -1,0 +1,26 @@
+# Compiled output and local build products
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.mdb
+*.cache
+*.zip
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Editors and operating systems
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local-only CKAN metadata with private or machine-specific values
+*.local.netkan
