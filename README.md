@@ -41,7 +41,7 @@ The script compiles against the assemblies in that KSP installation and writes t
 
 ## CKAN
 
-`NetKAN/KSPAnalyticsShield.netkan.template` is a draft configured for this GitHub repository. Before submission, publish a GitHub release with the install ZIP and confirm the license and KSP compatibility metadata. CKAN needs a stable release download URL; this draft cannot be indexed as-is.
+`NetKAN/KSPAnalyticsShield.netkan.template` is a draft configured for this GitHub repository. The `v0.2.0` GitHub release is marked as an experimental pre-release. Before submitting to CKAN, verify the mod in KSP, then finalize and submit the metadata to the NetKAN repository. This template cannot be indexed as-is.
 
 ## License
 
